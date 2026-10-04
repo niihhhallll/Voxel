@@ -30,6 +30,7 @@ int main()
     {
         // i can write comments ig.
         renderObj.clear();
+        // this colour is not working properly // DEBUGGG
         shaderObj.DrawQuad(400,300,200,400,BLUE);
         shaderObj.DrawTriangle(200,400,100,50);
         windowObj.update();
