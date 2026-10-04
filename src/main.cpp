@@ -6,6 +6,9 @@
 #include "Shader.cpp"
 #include "../include/Window.h"
 #include "../include/Renderer.h"
+#include "../include/Color.h"
+
+using namespace Color;
 
 int main()
 {
@@ -20,13 +23,14 @@ int main()
         return ErrorOpengl::windowInitFailed;
     }
     // set Clear Color
-    renderObj.setClearColor(0.0f,0.0f,0.0f,1.0f);
+    renderObj.setClearColor(WHITE);
 
    Graphics::Shader shaderObj{};
     while(!windowObj.isClosed())
     {
+        // i can write comments ig.
         renderObj.clear();
-        shaderObj.DrawQuad(400,300,200,400);
+        shaderObj.DrawQuad(400,300,200,400,BLUE);
         shaderObj.DrawTriangle(200,400,100,50);
         windowObj.update();
     }

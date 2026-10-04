@@ -350,20 +350,61 @@ src/CMakeFiles/app.dir/main.cpp.o: \
  /home/gigu/Projects/rust/voxel/src/../include/glm/integer.hpp \
  /home/gigu/Projects/rust/voxel/src/../include/glm/detail/func_integer.inl \
  /home/gigu/Projects/rust/voxel/src/Shader.cpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/matrix_transform.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_projection.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/../gtc/constants.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/../gtc/constants.inl \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_projection.inl \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_clip_space.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_clip_space.inl \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_transform.hpp \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../ext/matrix_transform.inl \
- /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/matrix_transform.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/type_ptr.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/quaternion.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/constants.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/constants.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../gtc/matrix_transform.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_relational.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_relational.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_common.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_common.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_float.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_double.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_double_precision.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_trigonometric.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_transform.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/quaternion_transform.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/quaternion.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/epsilon.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../detail/setup.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/epsilon.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/vec1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_bool1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_float1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_double1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_int1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_uint1.hpp \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/gigu/Projects/rust/voxel/src/../include/glm/gtc/type_ptr.inl \
+ /home/gigu/Projects/rust/voxel/src/../include/Color.h \
  /home/gigu/Projects/rust/voxel/src/../include/Window.h \
  /home/gigu/Projects/rust/voxel/src/../include/GLFW/glfw3.h \
  /home/gigu/Projects/rust/voxel/src/../include/Error.h \
- /home/gigu/Projects/rust/voxel/src/../include/Renderer.h
+ /home/gigu/Projects/rust/voxel/src/../include/Renderer.h \
+ /home/gigu/Projects/rust/voxel/src/../include/../include/Color.h

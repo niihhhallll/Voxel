@@ -1,6 +1,9 @@
+#pragma once
+#include "../include/Color.h"
+
 class Renderer
 {
     public:
-        void setClearColor(float r,float g,float b,float a);
+        void setClearColor(const Color::Type c);
         void clear() const;
 };

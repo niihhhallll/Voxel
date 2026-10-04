@@ -1,8 +1,8 @@
-
-
 #include "../include/glad/glad.h"
 #include "../include/glm/glm.hpp"
+#include "../include/glm/gtc/type_ptr.hpp"
 #include "../include/glm/gtc/matrix_transform.hpp"
+#include "../include/Color.h"
 
 // for printing out the errors and all,NULL identifier.
 #include <iostream>
@@ -16,7 +16,7 @@ public:
     // glsl code for vertex shader code.
     const char *vertexShaderCode = R"(#version 330 core
                     layout (location = 0) in vec2 aPos;
-
+                    layout (location = 1) in vec4 aClr;
                     out vec4 outColor;
                     uniform mat4 Projection;
                     uniform mat4 Model;
@@ -25,7 +25,7 @@ public:
                         vec4 worldPosition = Model * vec4(aPos,0.0,1.0f);
                         gl_Position = Projection * worldPosition;
 
-                        outColor = vec4(1.0f,0.5f,0.2f,1.0f);
+                        outColor = aClr;
                     }
 
                 )";
@@ -108,6 +108,7 @@ public:
 
   void initQuad()
   {
+      unsigned int colorVbo;
       glm::vec2 vertices[] =
           {
               glm::vec2(-0.5f,0.5f), // top
@@ -119,18 +120,35 @@ public:
           };
       glGenVertexArrays(1,&quadVao);
       glGenBuffers(1,&quadVbo);
+      glGenBuffers(1,&colorVbo);
       glBindVertexArray(quadVao);
 
       glBindBuffer(GL_ARRAY_BUFFER, quadVbo);
       glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
       glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(glm::vec2), (void*)0);
       glEnableVertexAttribArray(0);
-      glBindVertexArray(0);
+      //default colour initilize
+
+      glBindBuffer(GL_ARRAY_BUFFER,colorVbo);
+      glBufferData(GL_ARRAY_BUFFER,6 * sizeof(glm::vec4),nullptr,GL_DYNAMIC_DRAW);
+      glVertexAttribPointer(1,4,GL_FLOAT,GL_FALSE,sizeof(glm::vec4),(void*)0);
+      glEnableVertexAttribArray(1);
+
+       glBindVertexArray(0);
       return;
   }
 
-  void DrawQuad(float x,float y,float height,float width)
+  void DrawQuad(float x,float y,float height,float width,Color::Type c)
   {
+      // setting up the color
+
+      colorQ = Color::whichColor(c);
+      glm::vec4 quadColors[6] = {colorQ,colorQ,colorQ,colorQ,colorQ,colorQ};
+
+      glBindBuffer(GL_ARRAY_BUFFER, colorVbo);
+      glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(quadColors), glm::value_ptr(quadColors[0]));
+
+      // using the shader program.
       glUseProgram(shaderProgram);
      // the screen size height and width should be changed.
      // it should be inherited from the window class.
@@ -190,11 +208,11 @@ public:
   private:
     // shader program's object
     unsigned int shaderProgram;
-
+    glm::vec4 colorQ;
     // VAO'S FOR SHAPES
     // ----------------
         unsigned int triangleVao,triangleVbo;
-        unsigned int quadVao,quadVbo;
+        unsigned int quadVao,quadVbo,colorVbo;
 
     // ----------------
   };

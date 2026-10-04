@@ -130,6 +130,30 @@ app/fast:
 	cd /home/gigu/Projects/rust/voxel/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+Color.o: Color.cpp.o
+.PHONY : Color.o
+
+# target to build an object file
+Color.cpp.o:
+	cd /home/gigu/Projects/rust/voxel/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/Color.cpp.o
+.PHONY : Color.cpp.o
+
+Color.i: Color.cpp.i
+.PHONY : Color.i
+
+# target to preprocess a source file
+Color.cpp.i:
+	cd /home/gigu/Projects/rust/voxel/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/Color.cpp.i
+.PHONY : Color.cpp.i
+
+Color.s: Color.cpp.s
+.PHONY : Color.s
+
+# target to generate assembly for a file
+Color.cpp.s:
+	cd /home/gigu/Projects/rust/voxel/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/Color.cpp.s
+.PHONY : Color.cpp.s
+
 Renderer.o: Renderer.cpp.o
 .PHONY : Renderer.o
 
@@ -259,6 +283,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... Color.o"
+	@echo "... Color.i"
+	@echo "... Color.s"
 	@echo "... Renderer.o"
 	@echo "... Renderer.i"
 	@echo "... Renderer.s"

@@ -50,7 +50,7 @@ void InitOpengl::Window::addContext(GLFWwindow* window)
 }
 
 // updates the SwapBuffer and PollEvents function.
-void InitOpengl::Window::update()
+void InitOpengl::Window::update() 
 {
     glfwSwapBuffers(this->windowHandle);
     glfwPollEvents();
